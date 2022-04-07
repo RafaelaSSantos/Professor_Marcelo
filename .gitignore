@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+[SistemaBiblioteca]
+sistemaBibliotecadb.mv.db
+sistemaBibliotecadb.trace.db
+
+pom.xml
