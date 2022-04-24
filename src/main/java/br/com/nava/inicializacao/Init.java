@@ -5,15 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
-import br.com.nava.entity.Aluno;
-import br.com.nava.entity.AlunoDisciplina;
-import br.com.nava.entity.Avaliacao;
-import br.com.nava.entity.Disciplina;
-import br.com.nava.entity.Turma;
+import br.com.nava.entity.*;
 import br.com.nava.repository.AlunoRepository;
-import br.com.nava.service.AvaliacaoService;
-import br.com.nava.service.DisciplinaService;
-import br.com.nava.service.TurmaService;
+import br.com.nava.service.*;
 
 @Component
 public class Init implements ApplicationListener<ContextRefreshedEvent>{
@@ -31,13 +25,13 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 	private AvaliacaoService avaliacaoService;
 	
 	public void onApplicationEvent(ContextRefreshedEvent event) {
-//		
-//		Aluno aluno1 = new Aluno();
-//		aluno1.setNome("Juca");		
-//		Aluno aluno2 = new Aluno();
-//		aluno2.setNome("Marcia");		
-//		Aluno aluno3 = new Aluno();
-//		aluno3.setNome("Janaina");	
+		
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Juca");		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Marcia");		
+		Aluno aluno3 = new Aluno();
+		aluno3.setNome("Janaina");	
 //		
 //		alunoRepository.saveAll(Arrays.asList(aluno1, aluno2, aluno3));
 //		

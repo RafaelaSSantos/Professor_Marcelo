@@ -1,8 +1,7 @@
 package br.com.nava.entity;
 
 import java.io.Serializable;
-import javax.persistence.Embeddable;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Embeddable
 public class AlunoDisciplina implements Serializable{

@@ -2,15 +2,10 @@ package br.com.nava.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.*;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
-
-import br.com.nava.entity.Aluno;
-import br.com.nava.entity.AlunoDisciplina;
-import br.com.nava.entity.Avaliacao;
+import br.com.nava.entity.*;
 import br.com.nava.repository.AvaliacaoRepository;
 
 @Service

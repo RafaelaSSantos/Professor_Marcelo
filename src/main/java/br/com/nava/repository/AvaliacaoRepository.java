@@ -2,8 +2,7 @@ package br.com.nava.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import br.com.nava.entity.AlunoDisciplina;
-import br.com.nava.entity.Avaliacao;
+import br.com.nava.entity.*;
 
 @Repository
 public interface AvaliacaoRepository extends JpaRepository <Avaliacao, AlunoDisciplina>{
