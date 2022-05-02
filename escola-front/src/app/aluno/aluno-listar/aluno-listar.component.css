@@ -1,0 +1,11 @@
+.card-4{
+  display: flex;
+  background: rgb(240, 235, 235);
+  border-radius: 15px;
+  padding: 2%;
+  height: 100%;
+  width: 65%;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-right: 8%;
+}

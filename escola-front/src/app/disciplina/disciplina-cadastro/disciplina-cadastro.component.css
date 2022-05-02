@@ -1,0 +1,17 @@
+.input-group{
+  padding-right: 10%;
+  padding-left: 15%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin: 10% 5%;
+}
+.card-4{
+  display: flex;
+  background: rgb(240, 235, 235);
+  border-radius: 5%;
+  padding: 2%;
+  height: 30%;
+  width: 35%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
