@@ -8,22 +8,15 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">NOME</th>
+      <th scope="col">DISCIPLINA</th>
 
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
+    <tr *ngFor="let al of alunos">
+      <td>{{al.id}}</td>
+      <td>{{al.nome}}</td>
+      <td>{{al.disciplinas}}</td>
 
       <td>
         <button class="btn btn-outline-info" [routerLink]="">Editar</button>

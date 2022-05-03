@@ -14,6 +14,7 @@ import br.com.nava.service.AlunoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+@CrossOrigin
 @Tag(name=Messages.SWAGGER_TAG_ALUNO)
 @RestController
 @RequestMapping("/aluno")

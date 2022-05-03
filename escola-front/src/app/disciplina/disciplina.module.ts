@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DisciplinaRoutingModule } from './disciplina-routing.module';
 import { DisciplinaListarComponent } from './disciplina-listar/disciplina-listar.component';
 import { DisciplinaCadastroComponent } from './disciplina-cadastro/disciplina-cadastro.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DisciplinaCadastroComponent } from './disciplina-cadastro/disciplina-ca
   ],
   imports: [
     CommonModule,
-    DisciplinaRoutingModule
+    DisciplinaRoutingModule,
+    SharedModule
   ]
 })
 export class DisciplinaModule { }
