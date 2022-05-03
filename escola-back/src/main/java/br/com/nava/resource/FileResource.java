@@ -18,6 +18,7 @@ import br.com.nava.service.FileStorageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+@CrossOrigin
 @Tag(name=Messages.SWAGGER_TAG_FILE)
 @RestController
 @RequestMapping("/arquivo")

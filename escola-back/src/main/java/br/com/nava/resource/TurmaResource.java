@@ -14,6 +14,7 @@ import br.com.nava.service.TurmaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+@CrossOrigin
 @Tag(name = Messages.SWAGGER_TAG_TURMA)
 @RestController
 @RequestMapping("/turma")

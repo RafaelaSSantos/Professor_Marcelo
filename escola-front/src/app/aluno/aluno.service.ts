@@ -9,7 +9,7 @@ import { AlunoModel } from './aluno.model';
 export class AlunoService {
 
   constructor(private httpClient: HttpClient) {}
-    getAll() : Observable<any>{
+    getAll(){
       return this.httpClient.get<AlunoModel[]>('http://localhost:8080/api-sistema/aluno');
     }
 }

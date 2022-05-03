@@ -14,8 +14,8 @@ export class AlunoListarComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private alunosService: AlunoService,
-    
+    private alunosService: AlunoService
+
   ) { }
 
   ngOnInit(): void {
