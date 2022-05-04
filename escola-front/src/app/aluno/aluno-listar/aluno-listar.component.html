@@ -16,7 +16,7 @@
     <tr *ngFor="let al of alunos">
       <td>{{al.id}}</td>
       <td>{{al.nome}}</td>
-      <td>{{al.disciplinas}}</td>
+      <td>{{al.disciplinas | json}}</td>
 
       <td>
         <button class="btn btn-outline-info" [routerLink]="">Editar</button>

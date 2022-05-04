@@ -1,14 +1,15 @@
 <div class="card card-4 d-flex justify-content-between">
   <div class="card-body">
     <h2 class="title">Registro de Aluno</h2>
-    <form>
+    <form [formGroup]="meuForm" (submit)="onSubmit()">
 
       <div class="row row-space">
         <div class="col-2">
           <div class="input-group">
             <label class="label">Nome</label>
-            <input class="input--style-4" type="text" name="nome">
+            <input class="input--style-4" type="text" formControlName="nome">
           </div>
+          <app-mensagem [controles]="meuForm.controls['nome']" [mensagem]="'Erro ao preencher nome'"></app-mensagem>
         </div>
       </div>
 
@@ -16,14 +17,16 @@
         <div class="col-4" style="margin-right: 15%;">
           <div class="input-group">
             <label class="label">Matricula</label>
-            <input class="input--style-4" type="text" name="matricula">
+            <input class="input--style-4" type="text" formControlName="matricula">
           </div>
+          <app-mensagem [controles]="meuForm.controls['matricula']" [mensagem]="'Erro ao preencher matricula'"></app-mensagem>
         </div>
         <div class="col-4">
           <div class="input-group">
             <label class="label">Turma</label>
-            <input class="input--style-4" type="text" name="turma">
+            <input class="input--style-4" type="text" formControlName="turma">
           </div>
+          <app-mensagem [controles]="meuForm.controls['turma']" [mensagem]="'Erro ao preencher turma'"></app-mensagem>
         </div>
 
       </div>
@@ -31,9 +34,10 @@
       <div class="row row-space">
         <div class="col-2">
           <div class="input-group">
-            <label class="label">Disciplna</label>
-            <input class="input--style-4" type="text" name="disciplna">
+            <label class="label">Disciplina</label>
+            <input class="input--style-4" type="text" formControlName="disciplina">
           </div>
+          <app-mensagem [controles]="meuForm.controls['disciplina']" [mensagem]="'Erro ao preencher disciplina'"></app-mensagem>
         </div>
 
       </div>
